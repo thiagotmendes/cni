@@ -1,7 +1,7 @@
 /*
 Theme Name: CNI
 Theme URI:
-Author: Des: Raphael Ribeiro  Dev:Thiago Mendes
+Author: Des: 4media Diretor de arte: Raphael Ribeiro  Dev:Thiago Mendes
 Author URI:
 Description: Thema desenvolvido por Thiago Mendes e Raphael Ribeiro
 Version: 1.0
@@ -12,4 +12,143 @@ Text Domain: Restaurante paladino
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
+TABELA DE CORES
+VERMELHO #C50009
+CINZA CLARO #e0e0e0
+CINZA ESCURO #cecece
+BARRA TOPO #231f20
 */
+
+h1, h2, h3, h4, h5, h6{
+  color: #C50009;
+}
+
+
+.barra-superior{
+  background-color: #231f20;
+  color: #fff;
+  padding: 13px 0;
+}
+
+.links-superior a{
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  float: left;
+  padding: 0 7px;
+}
+
+.links-superior a:hover{
+  text-decoration: none;
+}
+
+.navbar-brand{
+  height: auto !important;
+}
+
+section.inner{
+  padding: 30px 0;
+}
+
+.inner-map{
+  padding: 70px 0
+}
+
+.box-apresenta{
+  background-color: #C50009;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.titulo-home{
+  text-align: center;
+  color: #C50009;
+  text-transform: uppercase;
+}
+
+.sevicos{
+  text-align: center;
+}
+
+.ret-servicos a{
+  display: block;
+  transition-duration: 0.1;
+  height: 160px;
+}
+
+.ret-servicos a:hover{
+  background-position: center -161px;
+}
+
+.auto a{
+  background: url('images/serv1.png') center top no-repeat;
+}
+
+.setconst a{
+  background: url('images/serv2.png') center top no-repeat;
+}
+
+.setener a{
+  background: url('images/serv3.png') center top no-repeat;
+}
+
+.agro a{
+  background: url('images/serv4.png') center top no-repeat;
+}
+
+.noticia-contato {
+  background-color: #e0e0e0;
+}
+
+.box-formcontato{
+  background-color: #cecece;
+  padding: 18px 15px;
+}
+
+.mapa{
+  background-color: #231f20;
+  color: #fff;
+  text-align: center;
+}
+
+.mapa img{
+  margin-bottom: 20px;
+}
+
+footer{
+  padding: 25px 0;
+  text-align: center;
+}
+
+/****** MENU DO SITE *****/
+.navbar{
+  margin-bottom: 0px !important;
+}
+.navbar-cni .navbar-nav{
+  margin-top: 60px;
+}
+
+.navbar-cni .navbar-nav > li > a{
+  font-size: 18px;
+  padding-bottom: 35px;
+  color: #231f20;
+  transition-duration: 0.8s;
+}
+
+.navbar-cni .navbar-nav>li>a:focus,
+.navbar-cni .navbar-nav>li>a:hover{
+  background-color: #C50009;
+  color: #fff;
+}
+
+.navbar-cni .navbar-nav>.active>a,
+.navbar-cni .navbar-nav>.active>a:focus,
+.navbar-cni .navbar-nav>.active>a:hover{
+  background-color: #C50009;
+  color: #fff;
+}
