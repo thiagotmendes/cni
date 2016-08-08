@@ -250,6 +250,10 @@ section.inner{
   text-decoration: none;
 }
 
+.menu-servicos li.activate a{
+  background: #C50009 !important;
+}
+
 .hvr-sweep-to-right:before{
   background: #C50009 !important;
 }
@@ -306,4 +310,28 @@ footer{
 .navbar-cni .navbar-nav>.active>a:hover{
   background-color: #C50009;
   color: #fff;
+}
+
+.navbar-toggle{
+  margin-top: 55px;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: #C50009;
+}
+
+/******************************************************/
+/**************** RESPONSIVO **************************/
+@media (max-width:640px) {
+  .links-superior{
+    display: none;
+  }
+
+  .navbar-cni .navbar-nav > li > a{
+    padding-bottom: 10px;
+  }
+
+  .box-apresenta{
+    font-size: 19px;
+  }
 }

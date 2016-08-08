@@ -17,7 +17,7 @@ if ( ! isset( $content_width ) ) $content_width = 610;
 /* ----------------------------------------------------- */
 /* Carregando o arquivo de configuração de Post Types */
 /* ----------------------------------------------------- */
-require_once('functions/custom-post-types.php');
+//require_once('functions/custom-post-types.php');
 
 /************************************************************/
 
