@@ -20,10 +20,46 @@ CINZA ESCURO #cecece
 BARRA TOPO #231f20
 */
 
-h1, h2, h3, h4, h5, h6{
-  color: #C50009;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+body{
+  font-family: 'Lato', sans-serif !important;
+  color: #737373 !important;
+  font-size: 15px !important;
 }
 
+h1, h2, h3, h4, h5, h6{
+  color: #C50009;
+  transition-duration: 0.3s;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+  color: #231f20;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover{
+  color: #C50009;
+  text-decoration: none;
+}
+
+main{
+  min-height: 600px;
+  padding:0 0 25px 0;
+}
+
+.topo-titulo{
+  background-color: #C50009;
+  background-position: center top;
+  text-align: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.topo-titulo h1{
+  color: #fff;
+}
 
 .barra-superior{
   background-color: #231f20;
@@ -37,7 +73,7 @@ h1, h2, h3, h4, h5, h6{
   display: block;
   font-size: 12px;
   float: left;
-  padding: 0 7px;
+  padding: 0 15px;
 }
 
 .links-superior a:hover{
@@ -53,7 +89,7 @@ section.inner{
 }
 
 .inner-map{
-  padding: 70px 0
+  padding: 100px 0
 }
 
 .box-apresenta{
@@ -82,11 +118,15 @@ section.inner{
 }
 
 .ret-servicos a:hover{
-  background-position: center -161px;
+  background-position: center -160px;
 }
 
 .auto a{
   background: url('images/serv1.png') center top no-repeat;
+}
+
+.auto a:hover{
+  background-position: center -161px;
 }
 
 .setconst a{
@@ -111,7 +151,7 @@ section.inner{
 }
 
 .mapa{
-  background-color: #231f20;
+  background: url('images/mapa.jpg') center top #231f20;
   color: #fff;
   text-align: center;
 }
@@ -120,24 +160,139 @@ section.inner{
   margin-bottom: 20px;
 }
 
+
+/****** NOTICIAS SITE *******************/
+.col-not{
+  background: #e0e0e0;
+  border: #ccc solid 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.conteudo-noticia{
+  padding: 20px 0;
+}
+
+.info-adicional{
+  background-color: #fbfbfb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.img-noticia img{
+  width: 100%;
+}
+
+.panel-bos{
+  margin: 15px 0;
+  border: #ccc solid 1px;
+}
+
+.panel-heading{
+  background-color: #C50009;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.titulo-noticia{
+  margin: 0 0 15px;
+}
+
+.noticia-home {
+  margin-bottom: 20px;
+}
+
+.noticia-home h4{
+  margin: 0px;
+}
+
+.btn-noticia {
+  background: #d9534f;
+  border-color: #d43f3a;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.frase-pos-banner {
+  text-transform: uppercase;
+}
+
+.tel-contato {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.btn-noticia:hover {
+  background: #c9302c;
+  border-color: #ac2925;
+}
+
+.menu-servicos{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.menu-servicos li a{
+  border-left: 6px solid #C50009;
+  padding: 9px 4px 9px 9px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.menu-servicos li a:hover{
+  /*background-color: #C50009 !important;*/
+  text-decoration: none;
+}
+
+.hvr-sweep-to-right:before{
+  background: #C50009 !important;
+}
+
+.img-author img{
+  width: 100% !important;
+}
+
+.nome-author{
+  margin: 0 0 15px;
+}
+
+/**** FOOTER ***************************/
 footer{
   padding: 25px 0;
   text-align: center;
+  border-top: #231f20 solid 3px;
+}
+
+.ass{
+  font-size: 11px;
+  color: #231f20;
 }
 
 /****** MENU DO SITE *****/
+.links-superior .fa{
+  font-size: 18px;
+}
+
 .navbar{
   margin-bottom: 0px !important;
+  border-bottom: 0px;
 }
 .navbar-cni .navbar-nav{
   margin-top: 60px;
 }
 
 .navbar-cni .navbar-nav > li > a{
-  font-size: 18px;
+  font-size: 17px;
   padding-bottom: 35px;
   color: #231f20;
   transition-duration: 0.8s;
+  text-transform: uppercase;
 }
 
 .navbar-cni .navbar-nav>li>a:focus,
